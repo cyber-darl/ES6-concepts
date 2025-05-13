@@ -1,13 +1,13 @@
 //Object.entries() returns an array of the key/value pairs of an object
 
-const person = {
+const guy = {
     firstName : "Samuel",
     lastName : "Perry",
     age: 50,
     eyeColor: "blue"
 }
 
-Object.entries(person); //console.log this to see the results
+Object.entries(guy); //console.log this to see the results
 //Object.entries turns the object into an array of arrays - an array of entries
 
 //MAP FILTER and REDUCE
@@ -44,6 +44,21 @@ const timesArray = (x, y) => {
 let coolArray3 = coolArray.reduce(timesArray);
 console.log (coolArray3);
 
+//Destructuring and spread operator, they work on both arrays and objects
+const shaggi = {
+firstName : "Jiggy",
+secondName : "Boy",
+model : "Ford"
+}
+
+let {firstName, ...others} = shaggi;
+/*now others is an object 
+others = {
+secondName : "Boy",
+model : "Ford"
+}
+
+console.log (others);
 
 
 
