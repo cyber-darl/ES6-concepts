@@ -6,6 +6,7 @@ type Product = {
   id: number;
   name: string;
   price: number;
+  brand: string;
   // Add other properties your ProductCard expects
 };
 
